@@ -1,5 +1,10 @@
-# first-mobile
-site teste de mobile-first
+# Treino-mobile-first
+Site experimental para trabalhar o mobile-first
 ---
-## aula 09/05
-*preparando os arquivos do site
+## Aula 09/05
+
+* Preparando os arquivos do site
+
+## aulça 16/05
+
+* Preparando header

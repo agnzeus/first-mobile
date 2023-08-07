@@ -47,11 +47,13 @@
     font-weight: 700;
 }
 
+
 .lista-menu__link{
-    background: var(--azul-degrade);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
 }
 
 .container__botao {
@@ -66,52 +68,79 @@
     display: none;
 }
 
-@media screen and (min-width:1024px) {
+.container__texto{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    
     .container__titulo,
-    .container__titulo--negrito{
-        font-family: var(--fonte-secundaria);
+    .container__titulo--negrito  {
+        font-family: var(--fonte-secundario);
         font-size: 30px;
     }
 
-    .container__titulo{
+    .container__titulo {
         font-weight: 400;
         display: block;
     }
 
-    .container__titulo--negrito{
+    .container__titulo--negrito {
         font-weight: 700;
     }
 
-    .opções{
+    .opções {
+    display: flex;
+}
+
+.opções__item {
+    padding: 0 1em;
+    text-transform: uppercase;
+}
+
+.opções__link {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.container__imagem-transparente {
+    display: none;
+}
+
+.cabecalho__menu-hamburguer {
+    display: none;
+}
+
+.opções__botão:checked~.lista-menu{
+    display: block;
+    width: auto;
+}
+
+.opções__botão{
+    display: none;
+}
+ 
+}
+
+
+    
+@media screen and ( min-width: 1728px) {
+    .container__link {
         display: flex;
-    }
-
-    .opções__item{
-        padding: 0 1em;
-        text-transform: uppercase;
-    }
-
-    .opções__link{
+        align-items: center;
         text-decoration: none;
         color: var(--preto);
     }
 
+    .cabeçalho {
+        padding: 0 2em;
+    }
 
-    .container__imagem-transparente{
-        display: none;}
+    .opções {
+        margin-right: auto;
+    }
 
-
-        .cabecalho__menu-hamburguer{
-            display: none;
-        }
-
-        .opções__botão:checked~.lista-menu{
-            display: block;
-            width: auto;
-        }
-
-        .opções__botão{
-            display: none;
-        }
+    .container__texto {
+        display: block;
+    }
 }
-
